@@ -27,6 +27,11 @@ componentTypes:
       This component type is used for the server or cluster hosting databases.  It is not used for the individual
       databases on those servers/clusters
 
+platforms:
+  - id: kubernetes
+    description: |
+      A [Kubernetes (k8s)](https://kubernetes.io) single node cluster
+
 areas:
   - id: website
     name: Website
