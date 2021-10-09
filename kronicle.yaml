@@ -20,17 +20,12 @@ componentTypes:
       Database
     notes: |
       This component type is used for an individual database and not for the server or cluster hosting the database
-  - id: database-server
+  - id: database-cluster
     description: |
-      Database Service or Cluster
+      Database Cluster
     notes: |
-      This component type is used for the server or cluster hosting databases.  It is not used for the individual
-      databases on those servers/clusters
-
-platforms:
-  - id: kubernetes
-    description: |
-      A [Kubernetes (k8s)](https://kubernetes.io) single node cluster
+      This component type is used for a cluster hosting databases.  It is not used for the individual
+      databases on those clusters
 
 areas:
   - id: website
@@ -152,3 +147,34 @@ teams:
       - url: https://example.com/confluence/fulfilment
         description: |
           Fulfilment team's Confluence space
+  - id: database
+    name: Database 🗄️
+    areaId: website
+    emailAddress: database@example.com
+    description: |
+      The Database team own Kronicle Computer's database clusters
+
+      The team's lead is [Musa Joselyn](mailto:musa.joselyn@example.com)
+
+      See links for public Slack channel etc.
+    notes: |
+      Please drop in to our public Slack channel if you have any questions for us etc.
+    links:
+      - url: https://example.com/slack/database
+        description: |
+          Database team's public Slack channel
+      - url: https://example.com/confluence/database
+        description: |
+          Database team's Confluence space
+
+components:
+  - id: main-mongodb-cluster
+    name: Main MongoDB Cluster
+    type: database-cluster
+    repo:
+      url: https://github.com/kronicle-computers/kronicle-computers-user-service.git
+    description: |
+      The main [MongoDB](http://www.mongodb.org) database cluster for the fictional Kronicle Computers online shop
+    teams:
+      - teamId: database
+    platform: kubernetes
