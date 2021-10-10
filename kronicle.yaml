@@ -40,7 +40,7 @@ componentTypes:
 areas:
 
   - id: kronicle-computers
-    name: Kronicle Computers
+    name: Fictional Kronicle Computers
     description: |
       The fictional Kronicle Computers online shop
     notes: |
