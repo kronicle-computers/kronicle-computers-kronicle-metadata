@@ -144,12 +144,12 @@ teams:
         description: |
           Orders team's Confluence space
 
-  - id: fulfilment
-    name: Fulfilment 🚚
+  - id: fulfillment
+    name: Fulfillment 🚚
     areaId: website
-    emailAddress: fulfilment@example.com
+    emailAddress: fulfillment@example.com
     description: |
-      The Fulfilment team own the microservices and back office tool for shipping and delivering orders to customers
+      The Fulfillment team own the microservices and back office tool for shipping and delivering orders to customers
 
       The team's lead is [Manuel Fran](mailto:manuel.fran@example.com)
 
@@ -157,12 +157,12 @@ teams:
     notes: |
       Please drop in to our public Slack channel if you have any questions for us etc.
     links:
-      - url: https://example.com/slack/fulfilment
+      - url: https://example.com/slack/fulfillment
         description: |
-          Fulfilment team's public Slack channel
-      - url: https://example.com/confluence/fulfilment
+          Fulfillment team's public Slack channel
+      - url: https://example.com/confluence/fulfillment
         description: |
-          Fulfilment team's Confluence space
+          Fulfillment team's Confluence space
 
   - id: database
     name: Database 🗄️
