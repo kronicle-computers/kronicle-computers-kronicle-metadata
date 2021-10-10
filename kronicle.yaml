@@ -39,10 +39,10 @@ componentTypes:
 
 areas:
 
-  - id: website
-    name: Website
+  - id: kronicle-computers
+    name: Kronicle Computers
     description: |
-      The Website area owns all the parts of the tech stack that are used by the Kronicle Computer's website
+      The fictional Kronicle Computers online shop
     notes: |
       Please drop in to our public Slack channel if you have any questions for us etc.
     links:
@@ -63,7 +63,7 @@ teams:
 
   - id: frontend
     name: Frontend 🕸️
-    areaId: website
+    areaId: kronicle-computers
     emailAddress: frontend@example.com
     description: |
       The Frontend team own the [Single Page App (SPA)](https://en.wikipedia.org/wiki/Single-page_application) for
@@ -84,7 +84,7 @@ teams:
 
   - id: identity
     name: Identity ✅
-    areaId: website
+    areaId: kronicle-computers
     emailAddress: identity@example.com
     description: |
       The Identity team own the parts of tech tack for creating customer accounts, signing into customer accounts etc.
@@ -104,7 +104,7 @@ teams:
 
   - id: catalog
     name: Catalog 📦
-    areaId: website
+    areaId: kronicle-computers
     emailAddress: catalog@example.com
     description: |
       The Catalog team own the microservices and back office tool for managing all the products that Kronicle Computers
@@ -125,7 +125,7 @@ teams:
 
   - id: orders
     name: Orders 🛍️
-    areaId: website
+    areaId: kronicle-computers
     emailAddress: orders@example.com
     description: |
       The Orders team own the microservices and back office tool for creating orders and order lines when customers
@@ -146,7 +146,7 @@ teams:
 
   - id: fulfillment
     name: Fulfillment 🚚
-    areaId: website
+    areaId: kronicle-computers
     emailAddress: fulfillment@example.com
     description: |
       The Fulfillment team own the microservices and back office tool for shipping and delivering orders to customers
@@ -166,7 +166,7 @@ teams:
 
   - id: database
     name: Database 🗄️
-    areaId: website
+    areaId: kronicle-computers
     emailAddress: database@example.com
     description: |
       The Database team own Kronicle Computer's database clusters
