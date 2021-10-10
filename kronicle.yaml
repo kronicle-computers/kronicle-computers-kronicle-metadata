@@ -4,30 +4,41 @@
 # [Kronicle](https://kronicle.tech)
 
 componentTypes:
+
   - id: spa
     description: |
       [Single Page App (SPA)](https://en.wikipedia.org/wiki/Single-page_application)
     notes: |
       A SPA is a web app built using JavaScript based technologies such as Vue.js, React and Angular
+
   - id: service
     description: |
       [Microservice](https://martinfowler.com/articles/microservices.html)
     notes: |
       A microservice is a particular style of web service.  A typically a microservice focused around a small,
       particular piece of functionality.
-  - id: database
+
+  - id: mongodb-database
     description: |
-      Database
+      [MongoDB](https://www.mongodb.com) Database
     notes: |
       This component type is used for an individual database and not for the server or cluster hosting the database
-  - id: database-cluster
+
+  - id: mongodb-database-cluster
     description: |
-      Database Cluster
+      [MongoDB](https://www.mongodb.com) Database Cluster
     notes: |
       This component type is used for a cluster hosting databases.  It is not used for the individual
       databases on those clusters
 
+  - id: aws-sqs-queue
+    description: |
+      [AWS SQS](https://aws.amazon.com/sqs/) Queue
+    notes: |
+      A normal, non-FIFO SQS queue
+
 areas:
+
   - id: website
     name: Website
     description: |
@@ -49,6 +60,7 @@ areas:
           Website area's Jira dashboards
 
 teams:
+
   - id: frontend
     name: Frontend 🕸️
     areaId: website
@@ -69,6 +81,7 @@ teams:
       - url: https://example.com/confluence/frontend
         description: |
           Frontend team's Confluence space
+
   - id: identity
     name: Identity ✅
     areaId: website
@@ -88,6 +101,7 @@ teams:
       - url: https://example.com/confluence/identity
         description: |
           Identity team's Confluence space
+
   - id: catalog
     name: Catalog 📦
     areaId: website
@@ -108,6 +122,7 @@ teams:
       - url: https://example.com/confluence/catalog
         description: |
           Catalog team's Confluence space
+
   - id: orders
     name: Orders 🛍️
     areaId: website
@@ -128,6 +143,7 @@ teams:
       - url: https://example.com/confluence/orders
         description: |
           Orders team's Confluence space
+
   - id: fulfilment
     name: Fulfilment 🚚
     areaId: website
@@ -147,6 +163,7 @@ teams:
       - url: https://example.com/confluence/fulfilment
         description: |
           Fulfilment team's Confluence space
+
   - id: database
     name: Database 🗄️
     areaId: website
@@ -168,9 +185,10 @@ teams:
           Database team's Confluence space
 
 components:
+
   - id: main-mongodb-cluster
     name: Main MongoDB Cluster
-    type: database-cluster
+    typeId: mongodb-database-cluster
     repo:
       url: https://github.com/kronicle-computers/kronicle-computers-user-service.git
     description: |
