@@ -1,17 +1,34 @@
 # This file is read automatically by Kronicle https://kronicle.tech
 
+
 # The contents of this file is for Kronicle Computers, a fictitious online computer shop, used as an example by
 # [Kronicle](https://kronicle.tech)
 
-componentTypes:
+platforms:
+  - id: kubernetes
+    description: |
+      A [microk8s](https://microk8s.io)-based [Kubernetes (k8s)](https://kubernetes.io) single node cluster
 
+  - id: aws-managed-service
+    description: |
+      A service managed by [AWS](https://aws.amazon.com)
+
+  - id: external
+    description: |
+      An external platform that is outside of and used by the Demo environment
+
+  - id: aws-cdk
+    description: |
+      [AWS CDK](https://aws.amazon.com/cdk/) config
+
+componentTypes:
   - id: spa
     description: |
       [Single Page App (SPA)](https://en.wikipedia.org/wiki/Single-page_application)
     notes: |
       A SPA is a web app built using JavaScript based technologies such as Vue.js, React and Angular
 
-  - id: service
+  - id: microservice
     description: |
       [Microservice](https://martinfowler.com/articles/microservices.html)
     notes: |
@@ -37,8 +54,35 @@ componentTypes:
     notes: |
       A normal, non-FIFO SQS queue
 
-areas:
+  - id: aws-cdk-config
+    description: |
+      [AWS CDK](https://aws.amazon.com/cdk/) config, implementing Infrastucture as Code (IoC)
+    notes: |
+      [AWS CDK](https://aws.amazon.com/cdk/) config for creating and updating AWS-based infrastructure
 
+  - id: helm-chart
+    description: |
+      A [Helm Chart](https://helm.sh/docs/topics/charts/)
+
+  - id: kubernetes-controller
+    description: |
+      A [Kubernetes controller](https://kubernetes.io/docs/concepts/architecture/controller/)
+
+  - id: managed-service
+    description: |
+      A managed service is typically a software capability - a queue, database, search index etc. - that is hosted and
+      managed by a third party (e.g. a cloud provider)
+
+  - id: webapp
+    description:
+      A webapp is a web-based application that servers web pages and/or web APIs over HTTP/HTTPS
+
+  - id: certificate-authority
+    description:
+      A [certificate authority](https://en.wikipedia.org/wiki/Certificate_authority) is an organisation or company
+      that issues digital certificates, including those used for TLS/HTTPS
+
+areas:
   - id: kronicle-computers
     name: Fictional Kronicle Computers
     description: |
@@ -60,7 +104,6 @@ areas:
           Website area's Jira dashboards
 
 teams:
-
   - id: frontend
     name: Frontend 🕸️
     areaId: kronicle-computers
@@ -185,7 +228,6 @@ teams:
           Database team's Confluence space
 
 components:
-
   - id: main-mongodb-cluster
     name: Main MongoDB Cluster
     typeId: mongodb-database-cluster
